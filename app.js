@@ -88,7 +88,6 @@ io.on('connection', function(socket) {
   socket.on('next', function(url) {
     var data = store.get(url);
     if(data) {
-      store.setDown(url, socket.id);
       var up = io.sockets.connected[data.up];
       if(up) {
         up.emit('next');

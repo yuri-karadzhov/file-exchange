@@ -6,7 +6,6 @@ $(function() {
   var progress = $('.progress').hide();
   var bar = $('.progress-bar');
 
-  var file;
   var writer;
 
   var socket = io();
@@ -20,7 +19,7 @@ $(function() {
   });
 
   socket.on('file', function(data) {
-    file = data;
+    var file = data;
     writer = new File(file);
     var date = new Date(file.date);
     info.html(escape(file.name) + ' '
