@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Please upload a file to exchange
+  div(class='btn btn-success' id='file-upload') Upload
+  input(type='file', name='file', id='file-exchange', multiple='false' style='display: none')
+  br
+  div(class='progress progress-striped')
+    div(class='progress-bar', role='progressbar')
+  div(id='info')
+  br
+  div(id='hash')
+  br
+  div(id='file-drop') drop file here to exchange
+  br
+  a(href='/') Try again
+
+  script(type='text/javascript', src='/js/upload.js')

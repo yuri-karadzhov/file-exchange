@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#blob-link {
+  display: none;
+}
+
+#file-upload, #file-download {
+  position: relative;
+  float: right;
+}
+
+#file-drop {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 26px;
+  border: 2px dashed #bbb;
+}
+
+.highlighted {
+  background-color: #55c01c;
+}

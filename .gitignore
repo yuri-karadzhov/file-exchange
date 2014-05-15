@@ -1,0 +1,11 @@
+*~
+npm-debug.log
+/node_modules
+/bower_components
+*.orig
+.DS_STORE
+.directory
+*.kate-swp
+.kateproject
+.kateconfig
+.kateproject.d/

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Welcome to File-Exchanger
+  div(class='btn btn-success' id='file-download') Download
+  p(id='error')
+  br
+  div(id='info')
+  br
+  div(class='progress progress-striped')
+    div(class='progress-bar', role='progressbar')
+  br
+  a(href='#' id='blob-link') hidden link
+  br
+  a(href='/') Upload your file
+
+  script(type='text/javascript', src='/js/file.js')
+  script(type='text/javascript', src='/js/download.js')
